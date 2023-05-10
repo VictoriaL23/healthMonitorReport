@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Include DataTables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+   <!-- CSS stylesheet  -->
+   <link rel="stylesheet" href="css/styles.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.0"></script>
+    <script src="path/to/chartjs/dist/chart.min.js"></script>
+    <script src="path/to/chartjs-plugin-annotation/dist/chartjs-plugin-annotation.min.js"></script>
+    
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <!-- Script -->
+    <script src="healthReport.js"></script>
+
+  <title>Report</title>
+  
+</head>
+  <body>
+    <div class="battery-table">
+      <title>Bar Graph Example</title>
+    </head>
+    <body>
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Site</th>
+            <th>Battery Voltage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Site 01</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>Site 02</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Site 03</td>
+            <td>10.32</td>
+          </tr>
+
+          <tr>
+            <td>Site 04</td>
+            <td>10.32</td>
+          </tr>
+          <tr>
+            <td>Site 05</td>
+            <td>10.32</td>
+            </tr>
+          <!-- Add more rows if needed -->
+        </tbody>
+      </table>
+    
+      <canvas id="myChart"></canvas>
+    
+    <button id="exportPDF">Export to PDF</button>
+  </div>
+  </body>
+</html>
